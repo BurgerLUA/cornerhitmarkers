@@ -29,19 +29,19 @@ function THM_SendHit(TopLeft,TopRight,BottomRight,BottomLeft)
 	if GetConVar("cl_burhit_enable"):GetFloat() >= 1 then
 
 		if TopLeft then
-			CountTable.TopLeft = math.Clamp(CountTable.TopLeft+1,0,3)
+			CountTable.TopLeft = math.Clamp(CountTable.TopLeft+1,0,1)
 		end
 			
 		if TopRight then
-			CountTable.TopRight = math.Clamp(CountTable.TopRight+1,0,3)
+			CountTable.TopRight = math.Clamp(CountTable.TopRight+1,0,1)
 		end
 		
 		if BottomRight then
-			CountTable.BottomRight = math.Clamp(CountTable.BottomRight+1,0,3)
+			CountTable.BottomRight = math.Clamp(CountTable.BottomRight+1,0,1)
 		end
 		
 		if BottomLeft then
-			CountTable.BottomLeft = math.Clamp(CountTable.BottomLeft+1,0,3)
+			CountTable.BottomLeft = math.Clamp(CountTable.BottomLeft+1,0,1)
 		end
 
 	end
